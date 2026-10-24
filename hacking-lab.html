@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hacking Lab | Seka Alexandre Davis</title>
+<meta name="description" content="Laboratoire de sécurité offensive et hacking éthique de Seka Alexandre Davis : reconnaissance, analyse de vulnérabilités, sécurité web et CTF.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="cyber.css">
+</head>
+<body>
+<div id="boot"><pre></pre></div>
+<canvas id="rain"></canvas>
+<div id="cur"></div>
+
+<header>
+  <a href="index.html" class="logo">SAD_</a>
+  <nav class="main-nav"><ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="EN-SAVOIR-PLUS.html">À propos</a></li>
+    <li><a href="competences.html">Compétences</a></li>
+    <li><a href="hacking-lab.html" aria-current="page">Hacking Lab</a></li>
+    <li><a href="PROJETS.html">Projets</a></li>
+    <li><a href="CONTACT.html">Contact</a></li>
+  </ul></nav>
+  <div class="hd-right">
+    <div class="sys">SYS_TIME<br><b id="clock">--:--:--</b><br>UTC+0</div>
+    <a class="btn" href="CONTACT.html">Démarrer un projet ↗</a>
+  </div>
+</header>
+
+<main>
+  <section class="sec page-header">
+    <div class="lbl"><i>/01</i>HACKING LAB</div>
+    <h2 class="glitch" data-t="HACKING LAB">HACKING LAB</h2>
+    <p class="mut tagline" data-type="Ethical Hacking / Reconnaissance / Sécurité offensive / CTF"><span></span></p>
+  </section>
+
+  <section class="sec rv">
+    <div class="lab-layout hacker-layout">
+      <div class="lab-panel">
+        <h3>Positionnement</h3>
+        <p>Je veux développer une vraie approche d'ethical hacking et de sécurité offensive : comprendre les mécanismes internes des systèmes, analyser les vulnérabilités dans des environnements autorisés et documenter rigoureusement les enseignements tirés.</p>
+        <ul class="lab-list">
+          <li>Reconnaissance et énumération.</li>
+          <li>Sécurité des applications web.</li>
+          <li>Linux et Kali Linux.</li>
+          <li>Analyse de vulnérabilités.</li>
+          <li>Exploitation en environnement de test.</li>
+          <li>CTF, Red Team et Blue Team.</li>
+        </ul>
+      </div>
+      <div class="lab-panel terminal-inline">
+        <div class="terminal-line">$ whoami</div>
+        <div class="terminal-line accent">ethical.hacker.in.training</div>
+        <div class="terminal-line">$ ls /labs</div>
+        <div class="terminal-line accent">recon/ web-security/ ctf/ linux/</div>
+        <div class="terminal-line">$ status</div>
+        <div class="terminal-line accent">Learning // Documenting // Testing</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec rv">
+    <div class="lbl"><i>/02</i>LABORATOIRES ET EXERCICES</div>
+    <div class="hacking-grid">
+      <article class="hacking-card status-done">
+        <div class="meta-row"><span>État</span><strong>Terminé</strong></div>
+        <h4>Lab n°01 — Reconnaissance basique</h4>
+        <p>Collecte de données de base, identification des services et documentation de la surface d'attaque.</p>
+        <ul>
+          <li>Environnement : Kali Linux + VM locale</li>
+          <li>Objectif : comprendre les étapes initiales d'un scan</li>
+          <li>Outils : nmap, whois, dig, enum4linux</li>
+        </ul>
+        <div class="card-footer">Compte rendu attendu : méthodologie + leçons.</div>
+      </article>
+
+      <article class="hacking-card status-progress">
+        <div class="meta-row"><span>État</span><strong>En cours</strong></div>
+        <h4>Lab n°02 — Analyse de vulnérabilités web</h4>
+        <p>Étude de la logique applicative, validation d'entrées, flux d'authentification et risques associés.</p>
+        <ul>
+          <li>Environnement : machine de test autorisée</li>
+          <li>Objectif : analyser les points d'entrée et leurs risques</li>
+          <li>Outils : Burp Suite, curl, navigateur, scripts</li>
+        </ul>
+        <div class="card-footer">Suivi technique à compléter.</div>
+      </article>
+
+      <article class="hacking-card status-plan">
+        <div class="meta-row"><span>État</span><strong>À venir</strong></div>
+        <h4>Lab n°03 — Exploitation contrôlée</h4>
+        <p>Conception de défis ciblés pour comprendre comment une faiblesse devient exploitable et comment la corriger.</p>
+        <ul>
+          <li>Environnement : machines vulnérables isolées</li>
+          <li>Objectif : documenter la chaîne exploit → correctif</li>
+          <li>Outils : Metasploit, scripts shell, outils de diagnostic</li>
+        </ul>
+        <div class="card-footer">Aucun faux rapport de pentest, seulement de vrais exercices documentés.</div>
+      </article>
+    </div>
+  </section>
+
+  <section class="sec rv">
+    <div class="lbl"><i>/03</i>TRAVAIL DE SÉCURITÉ</div>
+    <div class="focus-grid">
+      <div class="focus-panel">
+        <h3>Domaines en développement</h3>
+        <ul>
+          <li>Ethical Hacking</li>
+          <li>Offensive Security</li>
+          <li>Web Application Penetration Testing</li>
+          <li>Network Security</li>
+        </ul>
+      </div>
+      <div class="focus-panel">
+        <h3>Livrables attendus</h3>
+        <ul>
+          <li>Fiches techniques de laboratoire.</li>
+          <li>Rapports d'analyse de vulnérabilités.</li>
+          <li>Scripts utiles à l'automatisation de tâches récurrentes.</li>
+          <li>Documentation de correctifs et de bonnes pratiques.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Seka Alexandre Davis &nbsp;//&nbsp; Designed to build. Built to learn. Secured to last.</footer>
+<script src="cyber.js"></script>
+</body>
+</html>

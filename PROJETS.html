@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projets — Portfolio de Daves</title>
+<title>Projets | Seka Alexandre Davis</title>
+<meta name="description" content="Projets techniques de Seka Alexandre Davis : développement web, prototypes, IA, sécurité et laboratoires d'expérimentation.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
@@ -19,6 +20,8 @@
   <nav class="main-nav"><ul>
     <li><a href="index.html">Accueil</a></li>
     <li><a href="EN-SAVOIR-PLUS.html">À propos</a></li>
+    <li><a href="competences.html">Compétences</a></li>
+    <li><a href="hacking-lab.html">Hacking Lab</a></li>
     <li><a href="PROJETS.html" aria-current="page">Projets</a></li>
     <li><a href="CONTACT.html">Contact</a></li>
   </ul></nav>
@@ -30,58 +33,73 @@
 
 <main>
   <section class="sec">
-    <div class="lbl"><i>/01</i>SELECTED WORK</div>
+    <div class="lbl"><i>/01</i>PROJETS TECHNIQUES</div>
     <h2 style="font-size:clamp(2.4rem,6vw,4.5rem)" class="glitch" data-t="MES PROJETS">MES PROJETS</h2>
-    <p class="mut tagline" data-type="Écriture, développement web et gestion de communauté."><span></span></p>
+    <p class="mut tagline" data-type="Ce que j'ai construit, ce que j'apprends et ce que j'améliore."><span></span></p>
   </section>
 
-  <!--
-    Pour ajouter un projet : copie un bloc <div class="card"> entier.
-    Remplace le bloc "media" par <img src="IMAGE/ton-image.jpg" alt="..."> ou <video src="VIDEOS/x.mp4" controls></video>
-    Remplace chaque href="#" par ton vrai lien ou chemin de fichier.
-  -->
   <section class="sec rv">
-    <div class="cards" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+    <div class="project-grid">
+      <article class="project-card">
+        <div class="project-media visual-portfolio">
+          <img class="project-image" alt="Aperçu du portfolio personnel" loading="lazy" src="./photoporfolio.png">
+          <span>PORTFOLIO</span>
+        </div>
+        <div class="project-body">
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <h3>Portfolio personnel</h3>
+          <p>Portfolio actuel, conçu comme une vitrine technique personnelle et une démonstration de mon identité visuelle dans le web. Il met en avant mon orientation vers le développement, la cybersécurité et l'IA.</p>
+          <ul>
+            <li>Interface cyber-brutaliste</li>
+            <li>Animations terminales et interactions</li>
+            <li>Navigation claire et responsive</li>
+          </ul>
+          <div class="project-status">Statut : en perpétuelle evolution </div>
+        </div>
+      </article>
 
-      <div class="card">
-        <div class="media"><strong>AFUɛ NYAMA</strong>ex : IMAGE/afue-nyama-cover.jpg</div>
-        <h3 style="margin-top:1rem">AFUɛ NYAMA</h3>
-        <p>Manga dark fantasy shōnen puisant dans les mythologies akan-baoulé, dioula et bambara. Univers développé sur plusieurs tomes, avec bible narrative et fiches de personnages.</p>
-        <div class="tags"><span>Manga</span><span>Scénario</span><span>Worldbuilding</span></div>
-        <div class="links"><a href="AFUE NYAMA/AFUƐ NYAMA  Oeuvre Original.pdf" class="btn" target="_blank">AFUe NYAMA(PDF) ↗</a></div>
-      </div>
+      <article class="project-card">
+        <div class="project-media visual-demo">
+          <img class="project-image" alt="Aperçu des expérimentations d'interfaces" loading="lazy">
+          <span>WEB DEMO</span>
+        </div>
+        <div class="project-body">
+          <div class="tags"><span>Web</span><span>UI</span><span>Expérience</span></div>
+          <h3>Expérimentations interfaces</h3>
+          <p>Exploration des principes de design, de lisibilité et de hiérarchie visuelle pour des interfaces techniques et immersives. Ces réalisations servent de base de réflexion pour mes projets web.</p>
+          <ul>
+            <li>Thèmes futuristes et lisibles</li>
+            <li>Compositions visuelles propres</li>
+            <li>Prototypes à améliorer</li>
+          </ul>
+          <div class="project-status">Statut : prototype</div>
+        </div>
+      </article>
 
-      <div class="card">
-        <div class="media"><strong>LA DETTE DES OMBRES</strong>ex : IMAGE/dette-des-ombres-poster.jpg</div>
-        <h3 style="margin-top:1rem">La Dette des Ombres</h3>
-        <p>Série télévisée (thriller politique) se déroulant dans une république ouest-africaine fictive. Bible de série complète et scénario de la saison 1 rédigés.</p>
-        <div class="tags"><span>Série TV</span><span>Scénario</span><span>Thriller politique</span></div>
-        <div class="links"><a href="LA DETTE DES OMBRES/LA_DETTE_DES_OMBRES_Bible_v2.pdf" class="btn" target="_blank">LA DETTE DES OMBRES(PDF) ↗</a></div>
-      </div>
-
-      <div class="card">
-        <div class="media"><strong>COME PLAY HERE</strong>ex : IMAGE/come-play-here-screenshot.jpg</div>
-        <h3 style="margin-top:1rem">Come Play Here</h3>
-        <p>Site web personnel dédié au gaming : diaporama d'images, vidéos, musique et liens vers des plateformes de jeux en ligne. Réalisé en HTML/CSS uniquement.</p>
-        <div class="tags"><span>Développement web</span><span>HTML / CSS</span></div>
-        <div class="links"><a href="https://afuenyama.github.io/ONLINE-GAME/" class="btn" target="_blank">Voir le site en ligne ↗</a></div>
-      </div>
-
-      <div class="card">
-        <div class="media"><strong>MYL PIZZA AND CHICKEN</strong>ex : VIDEOS/myl-extrait.mp4</div>
-        <h3 style="margin-top:1rem">MYL Pizza And Chicken</h3>
-        <p>Gestion du compte TikTok d'un restaurant à Abidjan : création de contenu, lives et stratégie de croissance d'audience.</p>
-        <div class="tags"><span>Community management</span><span>TikTok</span><span>Vidéo</span></div>
-        <div class="links"><a href="https://www.tiktok.com/@mylabidjan?is_from_webapp=1&sender_device=pc" class="btn" target="_blank">Voir le compte TikTok ↗</a></div>
-      </div>
-
+      <article class="project-card">
+        <div class="project-media visual-lab">
+          <img class="project-image" alt="Aperçu du laboratoire technique" loading="lazy">
+          <span>TECH LAB</span>
+        </div>
+        <div class="project-body">
+          <div class="tags"><span>IA</span><span>Cybersécurité</span><span>Scripts</span></div>
+          <h3>Laboratoire technique</h3>
+          <p>Une structure prévue pour accueillir mes explorations en sécurité informatique, en automatisation, en IA appliquée et en prototypes de logique interactive.</p>
+          <ul>
+            <li>Scripts d'apprentissage</li>
+            <li>Outils et expérimentations</li>
+            <li>Documentation technique</li>
+          </ul>
+          <div class="project-status">Statut : à développer</div>
+        </div>
+      </article>
     </div>
   </section>
 
-  <div class="ticker"><span>✦ MANGAKA ✦ SCÉNARISTE ✦ DEVELOPPEMENT WEB ✦ COMMUNITY MANAGEMENT ✦ GIT/GITHUB ✦ HTML/CSS ✦ MANGAKA ✦ SCÉNARISTE ✦ DEVELOPPEMENT WEB ✦ COMMUNITY MANAGEMENT ✦ GIT/GITHUB ✦ HTML/CSS ✦</span></div>
+  <div class="ticker"><span>PORTFOLIO ✦ WEB ✦ SÉCURITÉ ✦ IA ✦ PROTOTYPES ✦ DEVELOPPEMENT ✦ PORTFOLIO ✦ WEB ✦ SÉCURITÉ ✦ IA ✦ PROTOTYPES ✦ DEVELOPPEMENT ✦ </span></div>
 </main>
 
-<footer>&copy; 2026 Daves — Tous droits réservés &nbsp;//&nbsp; ACCESS GRANTED_</footer>
+<footer>© 2026 Seka Alexandre Davis &nbsp;//&nbsp; Designed to build. Built to learn. Secured to last.</footer>
 <script src="cyber.js"></script>
 </body>
 </html>
